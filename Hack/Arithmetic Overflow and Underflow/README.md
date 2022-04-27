@@ -1,9 +1,3 @@
-<style>
-    p{
-        text-align : justify;
-    }
-</style>
-
 # Overflow and Underflow
 
 在 Solidity 裡面如果變數宣告為 uint256 則會有溢出(overflow)或下溢(underflow)之問題，即超出變數表示的範圍(2^256 -1)。

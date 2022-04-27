@@ -1,9 +1,3 @@
-<style>
-    p{
-        text-align : justify;
-    }
-</style>
-
 # Reentrancy
 
 假使有一智能合約名為 CryptoCurrencyStore，該合約實作了存款與取款功能，而使用者 A 和使用者 B 存入了兩枚以太幣，單位為 wei。
