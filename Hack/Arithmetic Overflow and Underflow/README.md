@@ -35,7 +35,7 @@ TimeLock 的合約漏洞為 increaseLockTime，我們可以直接利用該 funct
 
 假設有一智能合約，名為 game，該智能合約能夠讓遊戲玩家購買稀有的寶物兌換卷，其 function 說明如下：
 
-- buyRareTicket：使用 20 枚以太幣可購買一張入場卷。
+- buyRareTicket：使用 20 枚以太幣可購買一張兌換卷。
 - useRareTicket：使用兌換卷後，即可取得稀有的遊戲物品，使用者能夠一次使用多張。
 - getRareTicketAmount：查詢使用者的兌換卷剩下幾張。
 
