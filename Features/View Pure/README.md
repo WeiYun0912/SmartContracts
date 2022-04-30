@@ -33,3 +33,5 @@ add： 22313 gaw
 但是將 add(pure) 改為 view 時，雖然會出現警告提示，但我們同樣能部署智能合約。
 
 ![Image](https://i.imgur.com/OApiV9E.png)
+
+![Image](https://i.imgur.com/dBexSQb.png)
