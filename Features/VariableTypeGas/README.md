@@ -24,6 +24,8 @@ changeValueForUint256 ： 49871 gas
 
 [原因可以看這裡](https://ethereum.stackexchange.com/questions/3067/why-does-uint8-cost-more-gas-than-uint256)
 
+> The EVM works with 256bit/32byte words (debatable design decision). Every operation is based on these base units. If your data is smaller, further operations are needed to downscale from 256 bits to 8 bits, hence why you see increased costs.
+
 ## Deploy
 
 我們也可以比較在部署智能合約的時候，如果變數全都使用 uint8 或 uint256，哪個所耗費的 gas 較多。
