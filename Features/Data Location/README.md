@@ -25,3 +25,19 @@ Solidity 在讀取資料或修改資料時，常會使用到 storage 與 memory 
 所以 memory 通常只用來驗證使用者的某個欄位是否有符合條件式，例如使用者的餘額是否大於 0?
 
 ![Image](https://i.imgur.com/pIiyW4v.png)
+
+## Calldata
+
+calldata 與 memory 的作用相似，但 calldata 只能使用在 function 的輸入參數，且被宣告為 calldata 的參數是**不可再做修改的**，直接來看例子：
+
+當我們將參數宣告為 calldata 時，再將該參數的值修改，則會跳出錯誤提示並無法成功部署合約，當宣告為 memory 的參數值是可以修改的，但是使用 calldata 來傳入參數則會節省一些 gas 費用。
+
+![Image](https://i.imgur.com/alsZLXD.png)
+
+changeUserNameMemory ： 51880 gas
+
+![Image](https://i.imgur.com/oLAw4z8.png)
+
+changeUserNameCalldata : 51301 gas
+
+![Image](https://i.imgur.com/LE8jZKk.png)
