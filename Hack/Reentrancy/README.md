@@ -2,6 +2,8 @@
 
 [HackMD 連結](https://hackmd.io/x6ScUEz6QTSjjp2vrnr7aQ)
 
+[影片連結](https://www.youtube.com/watch?v=q7ZN6Lurs1U)
+
 假使有一智能合約名為 CryptoCurrencyStore，該合約實作了存款與取款功能，而使用者 A 和使用者 B 存入了兩枚以太幣，單位為 wei。
 
 ![Image](https://i.imgur.com/wxUahGk.png)

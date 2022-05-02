@@ -1,5 +1,7 @@
 # Selfdestruct
 
+[影片連結](https://www.youtube.com/watch?v=iAYbLLM7AzQ&feature=youtu.be)
+
 Selfdestruct 能夠將智能合約銷毀，並將合約內的所有以太幣轉移到其他智能合約。
 
 假使有一智能合約名為 EtherGame，每個使用者可以在該智能合約存入以太幣，而當智能合約的以太幣總數量到達 10 的時候，系統會將最後一個存入以太幣的使用者取回所有智能合約的以太幣，使用者一次只能存入一枚以太幣。
