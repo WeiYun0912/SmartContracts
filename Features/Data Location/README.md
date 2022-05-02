@@ -1,0 +1,27 @@
+# Data Location
+
+Solidity 在讀取資料或修改資料時，常會使用到 storage 與 memory 語法，使用 storage 語法，新增或修改後的資料會儲存至區塊鏈，而 memory 通常是用來讀取資料並不會更動到區塊鏈上儲存的資料。
+
+## Storage
+
+假設今天有一個 function，執行後會增加使用者的餘額，"增加"這個事件對區塊鏈來說就是一個新增或修改的動作，所以在取出使用者資料時，應使用 storage。
+
+![Image](https://i.imgur.com/PS71xTe.png)
+
+假使我們傳入的值為 10，則執行完後使用者的餘額(balance)應為 10。
+
+![Image](https://i.imgur.com/fToHGoS.png)
+
+## Memory
+
+現在將上述的範例改為 memory，再實際執行一次看看。
+
+![Image](https://i.imgur.com/7Gd52UT.png)
+
+可以看到執行了 addUserBalance function 後，使用者的餘額並沒有增加，意思就是宣告為 memory 的變數，在執行完 function 後就會直接將暫存的值給移除，並不會修改到變數本身的值。
+
+![Image](https://i.imgur.com/vNoz0lW.png)
+
+所以 memory 通常只用來驗證使用者的某個欄位是否有符合條件式，例如使用者的餘額是否大於 0?
+
+![Image](https://i.imgur.com/pIiyW4v.png)
