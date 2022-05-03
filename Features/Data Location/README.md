@@ -41,3 +41,17 @@ changeUserNameMemory ： 51880 gas
 changeUserNameCalldata : 51301 gas
 
 ![Image](https://i.imgur.com/LE8jZKk.png)
+
+## 補充
+
+假使要更新狀態變數時，應要依據更新的欄位多寡來選擇該使用何種方式，目前作者常用到的方式都是 storage，經過幾次的比較也發現 storage 比較省 gas，但是在一些情況下可能用 index 找值的方式會較省 gas。
+
+![Image](https://i.imgur.com/bl83R9S.png)
+
+addUserBalanceWithStorage : 50620 gas (使用 storage 的方式)
+
+![Image](https://i.imgur.com/z03HZYo.png)
+
+addUserBalanceWithoutStorage : 50706 gas (使用 index 找值的方式)
+
+![Image](https://i.imgur.com/MILS55i.png)
