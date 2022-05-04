@@ -20,6 +20,6 @@
 
 被加上 indexed 的參數，日後可以作為資料搜尋的依據，以上圖來說，sender 被宣告為 indexed，假設使用者 A 執行了 sendSomeToken function 並觸發了 Transfer event，則日後可以利用使用者 A 的 address 過濾掉除了使用者 A 以外的 Events，這麼一來就解決了上述提到的效能問題。
 
-而一個 event 最多宣告 3 個 indexed 的參數，被宣告為 indexed 的參數會顯示在 Events 頁面的 topic。.
+而一個 event 最多宣告 3 個 indexed 的參數，被宣告為 indexed 的參數會顯示在 Events 頁面的 topic。
 
 ![Image](https://i.imgur.com/AVhTBtZ.png)
