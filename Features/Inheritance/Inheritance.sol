@@ -16,7 +16,7 @@ contract A {
         return "Goodbye";
     }
 
-    //.... more function
+    //..... more function
 }
 
 contract B is A("Wei") {
