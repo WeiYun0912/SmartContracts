@@ -1,5 +1,7 @@
 # Fallback Receive
 
+[影片講解](https://www.youtube.com/watch?v=qse3c0VePfU)
+
 fallback 是當智能合約接收到以太幣的時候會觸發，或是當外部呼叫到不存在的智能合約 function 時觸發，而 receive 則是只會在接收到以太幣的時候被觸發。
 
 fallback 與 receive 的不同之處在於，fallback 可以接收外部訊息(msg.data)，而 receive 則是無法接收外部訊息。
