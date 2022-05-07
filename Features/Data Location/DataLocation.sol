@@ -21,4 +21,16 @@ contract DataLocation {
         }
         return false;
     }
+
+    //51880 gas
+    function changeUserNameMemory(string memory _name) public {
+        User storage user = users[msg.sender];
+        user.name = _name;
+    }
+
+    //51301 gas
+    function changeUserNameCalldata(string calldata _name) public {
+        User storage user = users[msg.sender];
+        user.name = _name;
+    }
 }

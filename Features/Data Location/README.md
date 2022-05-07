@@ -1,5 +1,7 @@
 # Data Location
 
+[影片講解](https://youtu.be/T2D3OBRR4zY)
+
 Solidity 在讀取資料或修改資料時，常會使用到 storage 與 memory 語法，使用 storage 語法，新增或修改後的資料會儲存至區塊鏈，而 memory 通常是用來讀取資料並不會更動到區塊鏈上儲存的資料。
 
 ## Storage
