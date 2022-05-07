@@ -16,7 +16,7 @@ fallback 與 receive 的不同之處在於，fallback 可以接收外部訊息(m
 
 ![Image](https://i.imgur.com/lOKInPt.png)
 
-而我們可以使用 Low level interaction 直接發送交易，或是直接寫一個新的智能合約專門發送以太幣到 FallbackRecevie 合約，這邊我們先使用 Low level 的方式來發送交易，在發送交易的時候記得要附上以太幣。
+而我們可以使用 Low level interaction 直接發送交易，或是直接寫一個新的智能合約專門發送以太幣到 FallbackRecevie 合約，這邊我們先使用 Low level 的方式來發送交易，在發送交易的時候記得要附上以太幣。.
 
 ## Low level interactions
 
