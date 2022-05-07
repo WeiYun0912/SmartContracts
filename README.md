@@ -7,6 +7,8 @@
 ```mermaid
   flowchart TD
       A[Ether is sent to contract]-->B{is msg.data empty?};
-      B -- Yes --> C[receive function exists?];
+      B -- Yes --> C{receive function exists?};
       B -- No --> D[execute fallback function];
+      C -- Yes --> E[execute receive function];
+      C -- No --> F[execute fallback function];
 ```
