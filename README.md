@@ -6,8 +6,8 @@
 
 ```mermaid
   graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
+      Ether is sent to contract-->is msg.data empty?;
+      is msg.data empty?-->yes;
+      is msg.data empty?-->no;
       C-->D;
 ```
