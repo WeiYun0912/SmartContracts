@@ -8,7 +8,7 @@ Selfdestruct 能夠將智能合約銷毀，並將合約內的所有以太幣轉�
 
 ![Image](https://i.imgur.com/lmlQydS.png)
 
-假設 EtherGame 存入的以太幣數量來到了 9 枚。
+假設 EtherGame 存入的以太幣數量來到了 9 枚，下一位存入以太幣的時候將能夠將10枚以太幣全部取走。
 
 ![Image](https://i.imgur.com/D2vuwLf.png)
 
