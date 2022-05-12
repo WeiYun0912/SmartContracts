@@ -9,6 +9,10 @@ function，則是能夠接收使用者的轉帳，要是沒有指定轉帳地址
 
 ![Image](https://i.imgur.com/LutwVSa.png)
 
+我們也可以在 deposit function 加一些條件判斷，像是使用者至少要發送 1 枚以太幣。
+
+![Image](https://i.imgur.com/vl8zLMd.png)
+
 而如果 function 沒有宣告為 payable 的話，是不能接收以太幣轉帳的。
 
 ![Image](https://i.imgur.com/JYWr0Qi.png)
