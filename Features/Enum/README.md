@@ -1,5 +1,7 @@
 # Enum
 
+[影片解說](https://youtu.be/8antG483vJI)
+
 Solidity 也支援 enum 語法，假使今天想為某個事件添增不同的階段，則可以考慮使用 enum，這邊使用商品訂單的運輸狀態來當範例。
 
 假設一筆訂單有五種狀態，待出貨(Pending)、運送中(Shipped)、訂單完成(Completed)、訂單取消(Canceled)以及預設狀態(None)。
