@@ -1,7 +1,7 @@
 # Call
 
 [影片解說](https://www.youtube.com/watch?v=DY4gq92fbRI)
-
+ 
 在 Solidity 裡面我們可以使用"call"來呼叫其他合約的 function，這樣的呼叫方式也稱作 low-level interactions，但 call 在大多數的情況下並不適合使用，因為它省略了 type 的檢查、function 的檢查以及參數打包等等，但使用 call 來呼叫 function 也能省下不少 gas，call 也常用來發送以太幣至智能合約。
 
 ## EncodeWithSignature
