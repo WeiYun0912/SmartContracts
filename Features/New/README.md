@@ -22,6 +22,6 @@
 
 ![Image](https://i.imgur.com/fhfvTSz.png)
 
-點擊 At Address 後，會看到我們的 Account 合約，查詢 bank 和 owner 後可以發現，bank 的 address 為我們的 AccountFactory，而 owner 為我們在執行 createAddressContract 時所傳入的 address。
+點擊 At Address 後，會看到我們的 Account 合約，查詢 bank 和 owner 後可以發現， bank 的 address 為我們的 AccountFactory，而 owner 為我們在執行 createAddressContract 時所傳入的 address。
 
 ![Image](https://i.imgur.com/4wJleJK.png)
