@@ -22,7 +22,7 @@
 
 ![Image](https://i.imgur.com/KrJU5Hq.png)
 
-可以看到我們的 callStore 成功被執行了，且在 logs 的地方顯示的是 Hack 合約內 deposit function 的 emit "Hack..."。
+可以看到我們的 callStore 成功執行了，且在 logs 的地方顯示的是 Hack 合約內 deposit function 的 emit "Hack..."。
 
 ![Image](https://i.imgur.com/hZgWXNC.png)
 
