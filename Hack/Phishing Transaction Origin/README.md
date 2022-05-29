@@ -1,5 +1,7 @@
 # Phishing With Transaction Origin
 
+[影片講解](https://youtu.be/9sDd-VCQwXc)
+
 今天要介紹如何智能合約的釣魚攻擊，假設 Alice 是某個儲存以太幣智能合約的 owner，在該合約中，只能 owner 能夠將以太幣轉出給其他人，而該智能合約在判斷 owner 的方式為(tx.origin == owner)，這樣的寫法會有什麼漏洞就是今天要介紹的主題。
 
 tx.origin 為交易的最初發起者，在 Solidity 中，要是錯誤的去使用 tx.origin 來做判斷的話，可能會為智能合約帶來極大的風險。
