@@ -8,7 +8,7 @@
 
 ![Image](https://i.imgur.com/wxUahGk.png)
 
-該智能合約的存款與取款 function 如下圖
+該智能合約的存款與取款 function 如下圖：
 
 ![Image](https://i.imgur.com/6oCl0cM.png)
 
