@@ -4,9 +4,9 @@
 
 在 Solidity 裡面，function 可以被宣告為 view 或是 pure。
 
-- view：當 function 宣告為 view 時，表示我們需要去讀取或修改智能合約的狀態變數。
+- view：當 function 宣告為 view 時，表示我們需要去讀取智能合約的狀態變數。
 
-- pure：當 function 宣告為 pure 時，表示我們不會去讀取或修改智能合約的狀態變數。
+- pure：當 function 宣告為 pure 時，表示我們不會去讀取智能合約的狀態變數。
 
 因 viewFunction 回傳了狀態變數 num，所以在這期間有做一個讀取的動作，而 pureFunction 則是沒有動用到任何智能合約的狀態變數。
 
